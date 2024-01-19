@@ -1,0 +1,83 @@
+.header {
+  position: absolute;
+  width: 100%;
+
+  display: flex;
+  padding: 16px 20px;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+  }
+
+  &__conteiner {
+    width: 100%;
+    max-width: 1440px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0 auto;
+  }
+
+  &__flex-conteiner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__flex-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  &__flex-menu {
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      justify-content: center;
+      flex-grow: 1;
+      gap: 56px;
+    }
+  }
+  &__linc {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      color: var(--primary-navy-blue);
+      text-decoration: none;
+      transition: color 0.2s;
+      display: block;
+    }
+  }
+
+  &__linc:hover {
+    color: var(--primary-blue);
+  }
+
+  &__flax-addres {
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  &__social {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      fill: var(--primary-navy-blue);
+      display: block;
+    }
+  }
+
+  &__burger {
+    fill: var(--primary-white);
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+  &__button {
+    background-color: transparent;
+    border: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+}

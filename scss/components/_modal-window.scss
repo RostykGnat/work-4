@@ -1,0 +1,91 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(1, 31, 74, 0.4);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: relative;
+  width: 723px;
+  height: 681px;
+  border-radius: 48px;
+  background-image: url(../picture/modal-becground.png);
+  background-color: var(--primary-navy-blue);
+  padding: 42px 144px;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.modal-conteiner {
+  max-width: 310px;
+  width: 100%;
+  margin: 0 62.5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.modal-input-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.modal-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.modal-header,
+.modal-text {
+  color: var(--primary-white);
+  margin: 0;
+}
+
+.modal-header {
+  font-size: 64px;
+  text-align: center;
+  font-family: "Play", sans-serif;
+  line-height: 1.2;
+}
+.modal-text {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  width: 277px;
+  margin: 0 16px;
+}
+.modal-leble {
+  color: var(--primary-white);
+  display: block;
+}
+
+.modal-input {
+  overflow: auto;
+  width: 100%;
+  border-radius: 32px;
+  border: 2px solid var(--secondary-grey);
+  background-color: transparent;
+  padding: 18px 32px;
+  outline: none;
+}
+.modal-input::placeholder {
+  color: var(--primary-white);
+}
+
+.modal-input:hover {
+  background-color: var(--secondary-grey);
+  outline: none;
+}

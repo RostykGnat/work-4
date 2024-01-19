@@ -1,0 +1,49 @@
+.our-procedures-section {
+  padding: 0 0 48px 0;
+
+  &__item {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    padding-top: 48px;
+    width: 100%;
+    max-width: 1320px;
+  }
+
+  &__flex {
+    padding-left: 0;
+    margin-bottom: 32px;
+  }
+
+  &__format-card {
+    position: relative;
+    width: 344px;
+    height: 456px;
+    border-radius: 4px 120px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 48.53%,
+      rgba(1, 28, 68, 0.73) 84.61%,
+      var(--primary-navy-blue) 101.39%
+    );
+  }
+
+  &__format-card-picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &__text {
+    color: var(--primary-white);
+    font-size: 22px;
+    padding: 372px 77px 32px 115px;
+    text-align: center;
+  }
+  &__container {
+    overflow: hidden;
+  }
+}

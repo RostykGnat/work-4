@@ -1,0 +1,129 @@
+.footer {
+  background-image: url(../picture/footer-background.png);
+  background-color: var(--primary-navy-blue);
+  padding-top: 32px;
+  @media screen and (min-width: $bp-desctop) {
+    padding-top: 56px;
+  }
+
+  &__conteiner {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 32px;
+    margin: 0 auto;
+  }
+
+  &__flex-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (min-width: $bp-desctop) {
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: row;
+    }
+  }
+
+  &__nav {
+    display: flex;
+
+    flex-basis: 50%;
+    text-align: center;
+    flex-direction: column;
+    @media screen and (min-width: $bp-desctop) {
+      text-align: left;
+      flex-direction: row;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding-bottom: 42px;
+    @media screen and (min-width: $bp-desctop) {
+      justify-content: flex-start;
+      padding-bottom: 0;
+    }
+  }
+
+  &__list {
+    padding: 0;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    flex-grow: 1;
+    @media screen and (min-width: $bp-desctop) {
+      padding-left: 40px;
+    }
+  }
+  &__list-hiden {
+    display: none;
+    @media screen and (min-width: $bp-desctop) {
+      display: flex;
+    }
+  }
+
+  &__link-main {
+    margin-bottom: 16px;
+    max-width: 204px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--primary-white);
+    font-size: 16px;
+    font-style: normal;
+    margin-bottom: 16px;
+  }
+
+  &__link:hover {
+    color: var(--primary-blue);
+    transition: color 0.2s;
+  }
+
+  &__address {
+    display: flex;
+    gap: 28px;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (min-width: $bp-desctop) {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+
+  &__social {
+    display: flex;
+
+    gap: 24px;
+    margin: 0;
+  }
+
+  &__social-adrres {
+    fill: var(--primary-white);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: $bp-desctop) {
+      align-items: flex-start;
+    }
+  }
+
+  &__data-is-protected {
+    font-size: 13px;
+    color: var(--secondary-grey);
+  }
+
+  &__photo {
+    @media screen and (min-width: $bp-desctop) {
+      display: flex;
+    }
+    display: none;
+  }
+}
